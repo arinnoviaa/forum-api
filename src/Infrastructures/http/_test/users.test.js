@@ -4,6 +4,7 @@ const container = require('../../container');
 const createServer = require('../createServer');
 
 describe('/users endpoint', () => {
+  beforeEach(() => jest.setTimeout(10000));
   afterAll(async () => {
     await pool.end();
   });
