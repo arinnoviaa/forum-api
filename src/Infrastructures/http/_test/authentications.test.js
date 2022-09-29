@@ -6,7 +6,7 @@ const createServer = require('../createServer');
 const AuthenticationTokenManager = require('../../../Applications/security/AuthenticationTokenManager');
 
 describe('/authentications endpoint', () => {
-  jest.setTimeout(60000);
+  jest.setTimeout(30000);
   afterAll(async () => {
     await pool.end();
   });
